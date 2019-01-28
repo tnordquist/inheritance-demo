@@ -1,0 +1,11 @@
+edu.cnm.deepdive.CanisLupus buck = new edu.cnm.deepdive.CanisLupus(); 
+buck.vocalize();
+buck.hunt();
+System.out.println(buck.NUMBER_OF_LEGS);
+System.out.println(buck);
+edu.cnm.deepdive.CanisLupus fido = new edu.cnm.deepdive.CanisLupusFamiliaris();
+fido.vocalize();
+fido.hunt();
+System.out.println(fido.NUMBER_OF_LEGS);
+System.out.println(fido);
+
