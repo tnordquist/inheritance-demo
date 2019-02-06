@@ -1,11 +1,8 @@
-edu.cnm.deepdive.CanisLupus buck = new edu.cnm.deepdive.CanisLupus(); 
-buck.vocalize();
-buck.hunt();
-System.out.println(buck.NUMBER_OF_LEGS);
-System.out.println(buck);
-edu.cnm.deepdive.CanisLupus fido = new edu.cnm.deepdive.CanisLupusFamiliaris();
-fido.vocalize();
-fido.hunt();
-System.out.println(fido.NUMBER_OF_LEGS);
-System.out.println(fido);
+import edu.cnm.deepdive.Canis;
 
+Canis rex = new edu.cnm.deepdive.CanisLupusFamiliaris(false);
+
+rex.vocalize();// called by CanisLupuFamiliaris
+rex.hunt(); // called by CanisLupus
+rex.about(); // static class invokation depends only on the reference type.  The
+System.out.println(rex);
