@@ -1,8 +1,9 @@
-import edu.cnm.deepdive.Canis;
+edu.cnm.deepdive.Trainable[] menagerie = {
+    new edu.cnm.deepdive.Chihuahua(),
+    new edu.cnm.deepdive.Seal()
+    
+};
 
-Canis rex = new edu.cnm.deepdive.CanisLupusFamiliaris(false);
-
-rex.vocalize();// called by CanisLupuFamiliaris
-rex.hunt(); // called by CanisLupus
-rex.about(); // static class invokation depends only on the reference type.  The
-System.out.println(rex);
+for(edu.cnm.deepdive.Trainable animal : menagerie) {
+  animal.perform();
+}
